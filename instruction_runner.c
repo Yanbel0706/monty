@@ -49,6 +49,8 @@ void instr_runner(stack_t **stack, char *instr, unsigned int line_counter)
 			pchar_op(stack, line_counter);
 		else if (strcmp(instruction, "rotl") == 0)
 			rotl_op(stack, line_counter);
+		else if (strcmp(instruction, "rotr") == 0)
+			rotr_op(stack, line_counter);
 		else if (strcmp(instruction, "nop") == 0)
 			nop(stack, line_counter);
 		else
