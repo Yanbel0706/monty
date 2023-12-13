@@ -51,6 +51,10 @@ void instr_runner(stack_t **stack, char *instr, unsigned int line_counter)
 			rotl_op(stack, line_counter);
 		else if (strcmp(instruction, "rotr") == 0)
 			rotr_op(stack, line_counter);
+		else if (strcmp(instruction, "stack") == 0)
+			stack_op(stack, line_counter);
+		else if (strcmp(instruction, "queue") == 0)
+			queue_op(stack, line_counter);
 		else if (strcmp(instruction, "nop") == 0)
 			nop(stack, line_counter);
 		else
