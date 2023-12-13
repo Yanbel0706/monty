@@ -35,10 +35,11 @@ void instr_runner(stack_t **stack, char *instr, unsigned int line_counter)
 			swap(stack, line_counter);
 		else if (strcmp(instruction, "add") == 0)
 			add(stack, line_counter);
-		else if (strcmp(instruction, "add") == 0)
+		else if (strcmp(instruction, "div") == 0)
 			division(stack, line_counter);
-		else if (strcmp(instruction, "add") == 0)                                                                       mul(stack, line_counter);
-		else if (strcmp(instruction, "add") == 0)
+		else if (strcmp(instruction, "mul") == 0)                                                                       mul(stack, line_counter);
+		else if (strcmp(instruction, "sub") == 0)                                                                      	sub(stack, line_counter);
+		else if (strcmp(instruction, "nop") == 0)
 			nop(stack, line_counter);
 		else
 		{
