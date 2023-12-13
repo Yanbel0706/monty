@@ -37,8 +37,12 @@ void instr_runner(stack_t **stack, char *instr, unsigned int line_counter)
 			add(stack, line_counter);
 		else if (strcmp(instruction, "div") == 0)
 			division(stack, line_counter);
-		else if (strcmp(instruction, "mul") == 0)                                                                       mul(stack, line_counter);
-		else if (strcmp(instruction, "sub") == 0)                                                                      	sub(stack, line_counter);
+		else if (strcmp(instruction, "mul") == 0)
+			mul(stack, line_counter);
+		else if (strcmp(instruction, "sub") == 0)
+			sub(stack, line_counter);
+		else if (strcmp(instruction, "mod") == 0)
+			op_mod(stack, line_counter);
 		else if (strcmp(instruction, "nop") == 0)
 			nop(stack, line_counter);
 		else

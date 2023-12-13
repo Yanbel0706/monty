@@ -30,6 +30,7 @@ void add(stack_t **stack, unsigned int line_counter);
 void division(stack_t **stack, unsigned int line_counter);
 void mul(stack_t **stack, unsigned int line_counter);
 void sub(stack_t **stack, unsigned int line_counter);
+void op_mod(stack_t **stack, unsigned int line_counter);
 void nop(stack_t **stack, unsigned int line_counter);
 void file_parser(const char *filename, stack_t **stack);
 void instr_runner(stack_t **stack, char *instr, unsigned int line_counter);
