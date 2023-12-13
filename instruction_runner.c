@@ -45,6 +45,8 @@ void instr_runner(stack_t **stack, char *instr, unsigned int line_counter)
 			op_mod(stack, line_counter);
 		else if (strcmp(instruction, "pstr") == 0)
 			pstr_op(stack, line_counter);
+		else if (strcmp(instruction, "rotl") == 0)
+			rotl_op(stack, line_counter);
 		else if (strcmp(instruction, "nop") == 0)
 			nop(stack, line_counter);
 		else
