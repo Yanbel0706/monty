@@ -43,6 +43,8 @@ void instr_runner(stack_t **stack, char *instr, unsigned int line_counter)
 			sub(stack, line_counter);
 		else if (strcmp(instruction, "mod") == 0)
 			op_mod(stack, line_counter);
+		else if (strcmp(instruction, "pstr") == 0)
+			pstr_op(stack, line_counter);
 		else if (strcmp(instruction, "nop") == 0)
 			nop(stack, line_counter);
 		else
